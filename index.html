@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="assets/logos/fav.png" />
+        <title>Angular Esports</title>
+        <!-- google font khand 700,montserrat 500 italic -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Khand:wght@700&family=Montserrat:ital,wght@1,500&display=swap"
+            rel="stylesheet"
+        />
+        <!-- global css -->
+        <link rel="stylesheet" href="global.css" />
+        <!-- page specific css -->
+        <link rel="stylesheet" href="index/index.css" />
+    </head>
+    <body>
+        <img
+            id="logo"
+            src="assets/logos/logoLight.png"
+            alt="Angular Esports logo"
+        />
+        <h1 id="mapVetoTitle" class="angularStyleText">VALORANT MAP VETO</h1>
+        <form id="adminForm" action="view/view.html">
+            <div id="bestOfContainer">
+                <span id="bestOfText">SELECT BEST OF:</span>
+                <input
+                    checked
+                    type="radio"
+                    id="bestOf1"
+                    name="bestOf"
+                    value="1"
+                />
+                <label for="bestOf1">1</label>
+                <input type="radio" id="bestOf3" name="bestOf" value="3" />
+                <label for="bestOf3">3</label>
+                <input type="radio" id="bestOf5" name="bestOf" value="5" />
+                <label for="bestOf5">5</label>
+            </div>
+            <div id="tournamentName">
+                <label for="tournamentNameInput">TOURNAMENT NAME:</label>
+                <input
+                    required
+                    type="text"
+                    id="tournamentNameInput"
+                    name="tournamentName"
+                />
+            </div>
+            <div id="teams">
+                <div id="teamA">
+                    <h2 class="angularStyleText">TEAM A</h2>
+                    <label for="teamAName">TEAM A NAME:</label>
+                    <input
+                        required
+                        type="text"
+                        id="teamAName"
+                        name="teamAName"
+                    />
+                    <br />
+                    <label for="teamALogo">TEAM A LOGO:</label>
+                    <input type="file" id="teamALogo" name="teamALogo" />
+                    <br />
+                    <label for="teamATheme">TEAM A THEME COLOR:</label>
+                    <input type="color" id="teamATheme" name="teamATheme" />
+                </div>
+                <div id="teamB">
+                    <h2 class="angularStyleText">TEAM B</h2>
+                    <label for="teamBName">TEAM B NAME:</label>
+                    <input
+                        required
+                        type="text"
+                        id="teamBName"
+                        name="teamBName"
+                    />
+                    <br />
+                    <label for="teamBLogo">TEAM B LOGO:</label>
+                    <input type="file" id="teamBLogo" name="teamBLogo" />
+                    <br />
+                    <label for="teamBTheme">TEAM B THEME COLOR:</label>
+                    <input type="color" id="teamBTheme" name="teamBTheme" />
+                </div>
+            </div>
+            <div id="maps">
+                <div class="cont-main">
+                    <div class="cont-checkbox">
+                        <input
+                            type="checkbox"
+                            name="maps"
+                            value="ascent"
+                            id="ascent"
+                        />
+                        <label for="ascent">
+                            <img src="assets/maps/ascent-featured.png" />
+                            <span class="cover-checkbox">
+                                <svg viewBox="0 0 12 10">
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                            <div class="info angularStyleText">ASCENT</div>
+                        </label>
+                    </div>
+                    <div class="cont-checkbox">
+                        <input
+                            type="checkbox"
+                            name="maps"
+                            value="bind"
+                            id="bind"
+                        />
+                        <label for="bind">
+                            <img src="assets/maps/bind-featured.png" />
+                            <span class="cover-checkbox">
+                                <svg viewBox="0 0 12 10">
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                            <div class="info angularStyleText">BIND</div>
+                        </label>
+                    </div>
+                    <div class="cont-checkbox">
+                        <input
+                            type="checkbox"
+                            name="maps"
+                            value="breeze"
+                            id="breeze"
+                        />
+                        <label for="breeze">
+                            <img src="assets/maps/breeze-featured.png" />
+                            <span class="cover-checkbox">
+                                <svg viewBox="0 0 12 10">
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                            <div class="info angularStyleText">BREEZE</div>
+                        </label>
+                    </div>
+                    <div class="cont-checkbox">
+                        <input
+                            type="checkbox"
+                            name="maps"
+                            value="fracture"
+                            id="fracture"
+                        />
+                        <label for="fracture">
+                            <img src="assets/maps/fracture-featured.png" />
+                            <span class="cover-checkbox">
+                                <svg viewBox="0 0 12 10">
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                            <div class="info angularStyleText">FRACTURE</div>
+                        </label>
+                    </div>
+                    <div class="cont-checkbox">
+                        <input
+                            type="checkbox"
+                            name="maps"
+                            value="haven"
+                            id="haven"
+                        />
+                        <label for="haven">
+                            <img src="assets/maps/haven-featured.png" />
+                            <span class="cover-checkbox">
+                                <svg viewBox="0 0 12 10">
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                            <div class="info angularStyleText">HAVEN</div>
+                        </label>
+                    </div>
+                    <div class="cont-checkbox">
+                        <input
+                            type="checkbox"
+                            name="maps"
+                            value="icebox"
+                            id="icebox"
+                        />
+                        <label for="icebox">
+                            <img src="assets/maps/icebox-featured.png" />
+                            <span class="cover-checkbox">
+                                <svg viewBox="0 0 12 10">
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                            <div class="info angularStyleText">ICEBOX</div>
+                        </label>
+                    </div>
+                    <div class="cont-checkbox">
+                        <input
+                            type="checkbox"
+                            name="maps"
+                            value="split"
+                            id="split"
+                        />
+                        <label for="split">
+                            <img src="assets/maps/split-featured.png" />
+                            <span class="cover-checkbox">
+                                <svg viewBox="0 0 12 10">
+                                    <polyline
+                                        points="1.5 6 4.5 9 10.5 1"
+                                    ></polyline>
+                                </svg>
+                            </span>
+                            <div class="info angularStyleText">SPLIT</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button id="submitBtn" type="submit">NEXT</button>
+        </form>
+        <script src="index/index.js"></script>
+    </body>
+</html>

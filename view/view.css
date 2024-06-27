@@ -1,0 +1,132 @@
+:root {
+    --angular-yellow: #fbc005;
+    --angular-orange: #f29100;
+    --team-a-color: ;
+    --team-b-color: ;
+}
+
+#logo {
+    width: 200px;
+    display: block;
+    margin: 40px auto 0;
+}
+
+#tournamentName {
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+#vetoTable {
+    width: 90%;
+    margin: 0 auto 40px;
+}
+
+#teams {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#teams .teamLogo {
+    width: 50px;
+    height: 50px;
+}
+
+#teamA, #teamB {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#teams .space {
+    width: 20px;
+}
+
+#teams .teamName {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+#teams {
+    border-radius: 5px;
+    padding: 20px;
+    background: linear-gradient(to right, var(--team-a-color), var(--team-b-color));
+}
+
+#maps {
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#maps .map {
+    cursor: pointer;
+    width: 13%;
+    position: relative;
+    height: 500px;
+    display: inline-block;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+#maps .map .mapName {
+    transition: all 0.3s ease-in-out;
+    font-family: 'Khand', sans-serif;
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+#maps .banX {
+    font-family: 'Khand', sans-serif;
+    position: absolute;
+    top: 50%;
+    font-size: 90px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    -webkit-text-stroke: 2px #ffffff;
+}
+
+#maps .checked .banX {
+    display: block;
+    opacity: 1;
+}
+
+#maps .map .mapLogo {
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    top: 0;
+}
+
+#maps .checked .mapName {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#maps .checked .mapLogo {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+}

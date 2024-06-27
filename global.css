@@ -1,0 +1,33 @@
+/* makes texts unselectable */
+body {
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+
+    --angular-yellow: #fbc005;
+    --angular-orange: #f29100;
+}
+
+
+body {
+    background-color: #05080D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.angularStyleText {
+    letter-spacing: 0.03em;
+    background: linear-gradient(180deg, var(--angular-yellow) 0%, var(--angular-orange) 73.84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(1px 2px 0 #ffffff);
+    font-family: 'Khand', sans-serif;
+}
